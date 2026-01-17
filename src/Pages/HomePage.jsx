@@ -1,7 +1,6 @@
 import React from 'react'
 import NavBar from '../Components/NavBar'
 import SearchBar from '../Components/SearchBar'
-import ProfileCard from '../Components/ProfileCard'
 import GitGraph from '../Components/GitGraph'
 import RepoLayout from '../Components/RepoLayout'
 
@@ -13,7 +12,6 @@ export const HomePage = () => {
                     sm:3/4 sm:bg-cyan-400 md:w-3/4 md:bg-emerald-700 lg:w-2/4 lg:bg-red-600'>
         <NavBar/>
         <SearchBar/>
-        <ProfileCard/>
         <GitGraph/>
         <RepoLayout/>
 

@@ -2,13 +2,14 @@ import React from 'react'
 import Profile from '../assets/profile'
 
 export const ProfileCard = ({
-  image,
-  profileName = "Profile Name",
-  userName = "username",
+
+  avatar,
+  profile = "Profile Name",
+  login = "username",
   followers = 12,
   following = 12,
   country = "flag",
-  description = "This is a sample bio of github profile"
+  bio = "This is a sample bio of github profile"
 }) => {
   return (
     <div className='w-4/5 bg-white rounded-xl shadow-md flex p-4 gap-4'>
@@ -16,7 +17,7 @@ export const ProfileCard = ({
       {/* avatar-part */}
       <div className="avatar-part w-16 flex items-start">
         <div className="w-14 h-14 rounded-full bg-gray-300 flex items-center justify-center">
-          <Profile />
+          <Profile image = {avatar}/>
         </div>
       </div>
 
@@ -26,13 +27,13 @@ export const ProfileCard = ({
         {/* name + country */}
         <span className='flex items-center justify-start gap-2'>
           <div className="profile-name font-semibold text-lg">
-            {profileName}
+            {profile}
           </div>
           <p className="text-sm text-gray-500">{country}</p>
         </span>
 
         {/* username */}
-        <p className='text-sm text-gray-500'>{userName}</p>
+        <p className='text-sm text-gray-500'>{login}</p>
 
         {/* followers / following */}
         <span className='flex gap-4 text-sm mt-1'>
@@ -48,7 +49,7 @@ export const ProfileCard = ({
 
         {/* description */}
         <p className="profile-description text-sm text-gray-600 mt-2">
-          {description}
+          {bio}
         </p>
       </div>
     </div>
