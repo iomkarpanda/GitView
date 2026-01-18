@@ -2,7 +2,7 @@ import React from 'react'
 
 export const NavBar = () => {
   return (
-    <div className='w-4/5 h-10 p-3 text-xl font-semibold bg-amber-300 mt-4 rounded-3xl flex justify-start items-center'>GitView</div>
+    <div className='w-full h-10 sm:h-12 p-2 sm:p-3 text-lg sm:text-xl font-bold bg-gray-700 text-white mt-2 sm:mt-4 rounded-3xl flex justify-center items-center shadow-lg'>GitView</div>
   )
 }
 

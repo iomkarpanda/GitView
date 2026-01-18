@@ -7,7 +7,7 @@ function App(){
     },[])
    
     return(
-        <div className="min-h-screen min-w-full bg-amber-400 flex justify-center items-center">
+        <div className="min-h-screen w-full bg-gray-900 flex justify-center items-center p-2 sm:p-4">
             <HomePage/>
         </div>
     )

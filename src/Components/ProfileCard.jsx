@@ -12,43 +12,41 @@ export const ProfileCard = ({
   bio = "This is a sample bio of github profile"
 }) => {
   return (
-    <div className='w-4/5 bg-white rounded-xl shadow-md flex p-4 gap-4'>
-      
+    <div className='w-full bg-gray-700 rounded-xl shadow-lg flex flex-col sm:flex-row p-3 sm:p-4 gap-3 sm:gap-4 border border-gray-600'>
+
       {/* avatar-part */}
-      <div className="avatar-part w-16 flex items-start">
-        <div className="w-14 h-14 rounded-full bg-gray-300 flex items-center justify-center">
-          <Profile image = {avatar}/>
-        </div>
+      <div className="avatar-part w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center flex-shrink-0 mx-auto sm:mx-0">
+        <Profile image={avatar}/>
       </div>
 
       {/* data-part */}
-      <div className="data-part w-full flex flex-col gap-1">
+      <div className="data-part w-full flex flex-col gap-1 text-center sm:text-left">
         
         {/* name + country */}
-        <span className='flex items-center justify-start gap-2'>
-          <div className="profile-name font-semibold text-lg">
+        <span className='flex flex-col sm:flex-row sm:items-center justify-center sm:justify-start gap-1 sm:gap-2'>
+          <div className="profile-name font-semibold text-base sm:text-lg text-white">
             {profile}
           </div>
-          <p className="text-sm text-gray-500">{country}</p>
+          <p className="text-xs sm:text-sm text-gray-400">{country}</p>
         </span>
 
         {/* username */}
-        <p className='text-sm text-gray-500'>{login}</p>
+        <p className='text-xs sm:text-sm text-gray-400'>{login}</p>
 
         {/* followers / following */}
-        <span className='flex gap-4 text-sm mt-1'>
+        <span className='flex gap-3 sm:gap-4 text-xs sm:text-sm mt-1 justify-center sm:justify-start'>
           <p>
-            <span className="font-semibold">{followers}</span>
-            <span className="text-gray-500"> Followers</span>
+            <span className="font-semibold text-blue-400">{followers}</span>
+            <span className="text-gray-400"> Followers</span>
           </p>
           <p>
-            <span className="font-semibold">{following}</span>
-            <span className="text-gray-500"> Following</span>
+            <span className="font-semibold text-blue-400">{following}</span>
+            <span className="text-gray-400"> Following</span>
           </p>
         </span>
 
         {/* description */}
-        <p className="profile-description text-sm text-gray-600 mt-2">
+        <p className="profile-description text-xs sm:text-sm text-gray-300 mt-2">
           {bio}
         </p>
       </div>
