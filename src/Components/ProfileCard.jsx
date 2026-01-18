@@ -15,7 +15,7 @@ export const ProfileCard = ({
     <div className='w-full bg-gray-700 rounded-xl shadow-lg flex flex-col sm:flex-row p-3 sm:p-4 gap-3 sm:gap-4 border border-gray-600'>
 
       {/* avatar-part */}
-      <div className="avatar-part w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center flex-shrink-0 mx-auto sm:mx-0">
+      <div className="avatar-part w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center shrink-0 mx-auto sm:mx-0">
         <Profile image={avatar}/>
       </div>
 
